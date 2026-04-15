@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/sc/css/style.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#a70138",
+                        "tertiary-fixed-dim": "#73a2ff",
+                        "outline": "#72757d",
+                        "on-secondary-container": "#ecfaff",
+                        "error": "#ff6e84",
+                        "on-error-container": "#ffb2b9",
+                        "on-primary-container": "#2e006c",
+                        "background": "#0a0e14",
+                        "on-secondary-fixed-variant": "#005969",
+                        "tertiary-fixed": "#8ab0ff",
+                        "on-error": "#490013",
+                        "inverse-surface": "#f8f9ff",
+                        "surface-tint": "#bd9dff",
+                        "tertiary-container": "#4388fd",
+                        "surface-variant": "#20262f",
+                        "on-tertiary": "#001e4a",
+                        "on-secondary-fixed": "#003a45",
+                        "inverse-primary": "#742fe5",
+                        "on-tertiary-fixed-variant": "#00377b",
+                        "surface-container-low": "#0f141a",
+                        "surface-container": "#151a21",
+                        "outline-variant": "#44484f",
+                        "secondary-dim": "#40ceed",
+                        "surface-container-high": "#1b2028",
+                        "surface-container-lowest": "#000000",
+                        "surface-container-highest": "#20262f",
+                        "surface": "#0a0e14",
+                        "on-primary-fixed-variant": "#390083",
+                        "on-surface": "#f1f3fc",
+                        "primary-fixed-dim": "#a67aff",
+                        "on-background": "#f1f3fc",
+                        "secondary-container": "#00687a",
+                        "surface-dim": "#0a0e14",
+                        "secondary-fixed-dim": "#48d4f3",
+                        "on-tertiary-fixed": "#00163b",
+                        "error-dim": "#d73357",
+                        "on-surface-variant": "#a8abb3",
+                        "primary": "#bd9dff",
+                        "on-tertiary-container": "#000311",
+                        "surface-bright": "#262c36",
+                        "primary-fixed": "#b28cff",
+                        "primary-container": "#b28cff",
+                        "tertiary": "#699cff",
+                        "primary-dim": "#8a4cfc",
+                        "tertiary-dim": "#699cff",
+                        "on-secondary": "#004b58",
+                        "on-primary": "#3c0089",
+                        "secondary-fixed": "#65e1ff",
+                        "on-primary-fixed": "#000000",
+                        "secondary": "#53ddfc",
+                        "inverse-on-surface": "#51555c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center px-12 py-8 w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-[60] bg-transparent">
+<div class="text-xl font-bold tracking-tighter text-violet-400 dark:text-violet-300 font-headline">DEV_ARCHIVE_V1</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-400 font-medium hover:text-cyan-400 transition-colors duration-300 font-headline tracking-tight" href="index.html">Portfolio</a>
+<a class="text-slate-400 font-medium hover:text-cyan-400 transition-colors duration-300 font-headline tracking-tight" href="insight.html">Insights</a>
+<a class="text-violet-400 font-bold border-b border-violet-400/50 pb-1 font-headline tracking-tight" href="terminal.html">Terminal</a>
+</div>
+<div class="flex items-center gap-4 text-violet-400 dark:text-violet-300">
+<span class="material-symbols-outlined cursor-pointer hover:text-cyan-400 transition-colors duration-300">terminal</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-cyan-400 transition-colors duration-300">settings</span>
+</div>
+</nav>
+<!-- SideNavBar (Tab 03 Active) -->
+<aside class="fixed left-0 top-1/2 -translate-y-1/2 h-fit py-8 flex flex-col gap-6 z-50 bg-[#0f141a]/60 backdrop-blur-xl rounded-r-xl border-r border-white/5 shadow-[0_0_40px_rgba(124,58,237,0.04)] font-headline text-xs tracking-widest uppercase">
+<div class="px-4 py-2 opacity-40 text-on-surface-variant font-bold">PRESENTATION</div>
+<div class="flex flex-col">
+<div class="group flex items-center gap-4 px-6 py-4 cursor-pointer text-slate-500 hover:text-slate-300 hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined text-lg">radio_button_checked</span>
+<span>01_Hero</span>
+</div>
+<div class="group flex items-center gap-4 px-6 py-4 cursor-pointer text-slate-500 hover:text-slate-300 hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined text-lg">grain</span>
+<span>02_Process</span>
+</div>
+<div class="group flex items-center gap-4 px-6 py-4 cursor-pointer bg-gradient-to-r from-violet-500/20 to-cyan-500/20 text-cyan-400 border-l-2 border-cyan-400 transition-all">
+<span class="material-symbols-outlined text-lg">memory</span>
+<span>03_Stack</span>
+</div>
+</div>
+<div class="px-6 mt-4 text-[10px] text-slate-600 tracking-[0.2em]">FE_ENGINEER_DECK</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-32 pb-24 px-12 md:pl-48 max-w-7xl mx-auto">
+<!-- Header Section -->
+<header class="mb-20">
+<div class="flex items-center gap-4 mb-4">
+<div class="h-px w-12 bg-secondary/50"></div>
+<span class="font-label text-secondary text-xs tracking-[0.3em] uppercase">Phase 03: Validation</span>
+</div>
+<h1 class="font-headline text-6xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6 max-w-3xl leading-[0.9]">
+                Proof of <span class="text-primary-fixed-dim">Concept.</span><br/>
+                Digital <span class="text-secondary">Handshake.</span>
+</h1>
+</header>
+<!-- Project Showcase Grid (2x2) -->
+<section class="mb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="group glass-card p-1 rounded-xl transition-all duration-500 hover:bg-surface-container-highest">
+<div class="relative overflow-hidden rounded-lg aspect-video mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="abstract high-tech server room with glowing blue neon circuits and data stream overlays in a dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzcZD5LeHzlmjZkowLS1i7nKERABMpJNeAkZzIfiwT22sDhAGcBCt-1robaYXYcPAw9ok6312afQVvqES1K7SR_rCvMTxNawIKxJv9I_Mt7CCDILmX-Q6lX664sPETYhM-AxPaEpi2L28yB0ctKzrbn4aLXh4Hqg0KmXpz_dzZfDHv2buGQxJRFt2lCECOl-ZUVQIhiAFJH_SmPxe-GCRxXRLqy6_cWkNrUlYM1z4EjVR1mQkEcy5RldeVotrWiqYTyeZP1Nvh3T4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary mb-1 block">Project 01</span>
+<h3 class="font-headline text-xl font-bold">NEURAL_NET_V4</h3>
+</div>
+</div>
+<div class="px-4 pb-6">
+<p class="text-on-surface-variant text-sm mb-6 font-body leading-relaxed">High-performance data visualization engine built for real-time neural network monitoring and latency optimization.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Typescript</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Three.js</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">WebGPU</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group glass-card p-1 rounded-xl transition-all duration-500 hover:bg-surface-container-highest md:translate-y-12">
+<div class="relative overflow-hidden rounded-lg aspect-video mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="digital representation of a satellite in orbit with light particles and data connecting across a dark globe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmX--YYBeGiQC4yinUnS6fSRMTpULP6n91MHRdxddiG_11zzd3pTbuOBmZE91BgPuwd-i0KZo72l5u1WgUrILGM3Rqs96syfza8VKuqn3oRYjZCaypxXNLXuukQWpDpR5d_2YEc0TYuHmYwbLr3TXruar1wKku_OapJPOUQ2dCKRdEhduhJ64iZ205HpQ2p65gMGH6NnB2cXGjFPU_idV2QON5DEKE473CxKH0BCUlNzvkn4nYroFh9h9IBs9L3jBKmUIgfjsXbRE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary mb-1 block">Project 02</span>
+<h3 class="font-headline text-xl font-bold">ORBIT_SYSTEMS</h3>
+</div>
+</div>
+<div class="px-4 pb-6">
+<p class="text-on-surface-variant text-sm mb-6 font-body leading-relaxed">Geospatial data dashboard managing multi-region cloud infrastructure with 99.9% uptime visualization.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">React</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Go</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Kubernetes</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group glass-card p-1 rounded-xl transition-all duration-500 hover:bg-surface-container-highest">
+<div class="relative overflow-hidden rounded-lg aspect-video mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="microscopic view of high-tech processor circuits with orange and blue glowing highlights in a dark metallic space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAczhjZYiA7cHK9DrItGAlEDqQSKDXtVXmeB4dX2IBoyo_gVpf4sScRTc938pBO4Xrw_jKHGmNK4swkyBxCenLPqQI6KD00ybXkBna2VVp6sV34nKtf0gwjQjadLzze8s_12qrX1_0hh3KHP0SU9qk6neqQ4bw_rnv4ba0fUsKUICUYk4k-sW-e2mkd3OSZ2zu95t_LSLR46VF24dEx8CsZNAGNvs-l3RFPIBg3CSB8HA_24i1ANL7su2TmSMRGwaL1LMqh9j-CJyc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary mb-1 block">Project 03</span>
+<h3 class="font-headline text-xl font-bold">CORE_ARCHITECT</h3>
+</div>
+</div>
+<div class="px-4 pb-6">
+<p class="text-on-surface-variant text-sm mb-6 font-body leading-relaxed">Automated design system generator utilizing AI to convert low-fidelity wireframes into production React components.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Next.js</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Tailwind</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">OpenAI API</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group glass-card p-1 rounded-xl transition-all duration-500 hover:bg-surface-container-highest md:translate-y-12">
+<div class="relative overflow-hidden rounded-lg aspect-video mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="abstract blockchain visualization with crystalline blocks and glowing geometric lines against a void background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Be2MaWQzCXeb-C4JreSpwHHey0WiDD-RTxM1frjmrOO2jPn44JaCnIq3AAq4E0rnzhCpfTsaHVHifeTtPbOc3PfwgPAYO6Ya4SXH3T_1uY_9Lt9F7GtZZZFOdwpKdyhnS9M9yUNhP7IzQY-ap-J1i2R52zKdClsmByrxjU6Ac_VJJzE9oMYv2INmvUuboC_jDpiNP_KzfyOruhgKLUWw4u1w7JBh6tL9QWuvKUaaqPkJafk4VQ6PcWY-_veKNGpQ77sRUJHiUXY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary mb-1 block">Project 04</span>
+<h3 class="font-headline text-xl font-bold">BLOCK_VAULT</h3>
+</div>
+</div>
+<div class="px-4 pb-6">
+<p class="text-on-surface-variant text-sm mb-6 font-body leading-relaxed">Decentralized asset management platform featuring cryptographic security audits and instant liquidity tracking.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Solidity</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Web3.js</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-label font-medium">Ethers</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline Section -->
+<section class="mb-32 mt-40">
+<h2 class="font-headline text-3xl font-bold mb-16 flex items-baseline gap-4">
+<span class="text-primary">/</span> EXPERIENCE_LOG
+            </h2>
+<div class="relative space-y-0">
+<!-- Vertical Line -->
+<div class="absolute left-[3.5rem] top-0 bottom-0 w-px bg-gradient-to-b from-primary via-secondary to-transparent opacity-20 hidden md:block"></div>
+<!-- Timeline Item 1 -->
+<div class="relative flex flex-col md:flex-row gap-12 mb-20">
+<div class="md:w-32 flex flex-col items-center">
+<span class="font-headline text-2xl font-bold text-on-surface/40">2024</span>
+<div class="w-4 h-4 rounded-full border-2 border-primary bg-background z-10 mt-2"></div>
+</div>
+<div class="flex-1 glass-card p-8 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-xl font-bold text-primary">Lead Frontend Engineer</h4>
+<p class="text-sm font-label text-on-surface-variant">CYBER_DYNE SYSTEMS</p>
+</div>
+<span class="font-label text-[10px] tracking-tighter bg-primary/10 text-primary px-3 py-1 rounded uppercase">Current</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Spearheading the transition to micro-frontends and optimizing core rendering pipelines for the main SaaS platform. Reduced bundle sizes by 40% across all modules.</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex flex-col md:flex-row gap-12 mb-20">
+<div class="md:w-32 flex flex-col items-center">
+<span class="font-headline text-2xl font-bold text-on-surface/40">2022</span>
+<div class="w-4 h-4 rounded-full border-2 border-secondary bg-background z-10 mt-2"></div>
+</div>
+<div class="flex-1 glass-card p-8 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-xl font-bold text-secondary">Senior Interaction Designer</h4>
+<p class="text-sm font-label text-on-surface-variant">VOID_LABS</p>
+</div>
+<span class="font-label text-[10px] tracking-tighter border border-outline-variant text-on-surface-variant px-3 py-1 rounded uppercase">24 MOS</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Developed immersive data visualization libraries for financial sectors. Integrated complex 3D environments into React-based workflows.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="max-w-4xl">
+<div class="glass-card p-12 rounded-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<h2 class="font-headline text-4xl font-bold mb-4">Initialize Connection</h2>
+<p class="text-on-surface-variant mb-12 max-w-lg">Ready to build the next iteration of the web? Reach out through the terminal below.</p>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-primary py-2 px-0 focus:ring-0 transition-colors placeholder-transparent text-on-surface" id="name" placeholder=" " type="text"/>
+<label class="absolute left-0 -top-4 text-xs font-label uppercase tracking-widest text-on-surface-variant transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-outline-variant peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary cursor-text" for="name">Identifier / Name</label>
+</div>
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-primary py-2 px-0 focus:ring-0 transition-colors placeholder-transparent text-on-surface" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 -top-4 text-xs font-label uppercase tracking-widest text-on-surface-variant transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-outline-variant peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary cursor-text" for="email">Communication_Node / Email</label>
+</div>
+</div>
+<div class="relative group">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-primary py-2 px-0 focus:ring-0 transition-colors placeholder-transparent text-on-surface resize-none" id="message" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 -top-4 text-xs font-label uppercase tracking-widest text-on-surface-variant transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-outline-variant peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary cursor-text" for="message">Transmission_Data / Message</label>
+</div>
+<button class="group relative px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-md text-on-primary-fixed font-headline font-bold text-sm tracking-widest uppercase overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(189,157,255,0.4)] flex items-center gap-3" type="submit">
+                        Execute_Send
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 w-full flex justify-between px-12 py-6 pointer-events-none z-[60]">
+<div class="font-label text-[10px] tracking-widest text-slate-500 uppercase">©2024 SYSTEM_CORE</div>
+<div class="flex gap-8 pointer-events-auto">
+<a class="font-label text-[10px] tracking-widest text-slate-600 hover:text-cyan-400 transition-colors uppercase" href="#">GitHub</a>
+<a class="font-label text-[10px] tracking-widest text-slate-600 hover:text-cyan-400 transition-colors uppercase" href="#">Source_Code</a>
+</div>
+</footer>
+<!-- Background Orbs -->
+<div class="fixed top-1/4 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+<div class="fixed bottom-1/4 -left-32 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[140px] -z-10"></div>
+</body></html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DEV_ARCHIVE_V1 - Expertise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/sc/css/style.css">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#a70138",
+                    "tertiary-fixed-dim": "#73a2ff",
+                    "outline": "#72757d",
+                    "on-secondary-container": "#ecfaff",
+                    "error": "#ff6e84",
+                    "on-error-container": "#ffb2b9",
+                    "on-primary-container": "#2e006c",
+                    "background": "#0a0e14",
+                    "on-secondary-fixed-variant": "#005969",
+                    "tertiary-fixed": "#8ab0ff",
+                    "on-error": "#490013",
+                    "inverse-surface": "#f8f9ff",
+                    "surface-tint": "#bd9dff",
+                    "tertiary-container": "#4388fd",
+                    "surface-variant": "#20262f",
+                    "on-tertiary": "#001e4a",
+                    "on-secondary-fixed": "#003a45",
+                    "inverse-primary": "#742fe5",
+                    "on-tertiary-fixed-variant": "#00377b",
+                    "surface-container-low": "#0f141a",
+                    "surface-container": "#151a21",
+                    "outline-variant": "#44484f",
+                    "secondary-dim": "#40ceed",
+                    "surface-container-high": "#1b2028",
+                    "surface-container-lowest": "#000000",
+                    "surface-container-highest": "#20262f",
+                    "surface": "#0a0e14",
+                    "on-primary-fixed-variant": "#390083",
+                    "on-surface": "#f1f3fc",
+                    "primary-fixed-dim": "#a67aff",
+                    "on-background": "#f1f3fc",
+                    "secondary-container": "#00687a",
+                    "surface-dim": "#0a0e14",
+                    "secondary-fixed-dim": "#48d4f3",
+                    "on-tertiary-fixed": "#00163b",
+                    "error-dim": "#d73357",
+                    "on-surface-variant": "#a8abb3",
+                    "primary": "#bd9dff",
+                    "on-tertiary-container": "#000311",
+                    "surface-bright": "#262c36",
+                    "primary-fixed": "#b28cff",
+                    "primary-container": "#b28cff",
+                    "tertiary": "#699cff",
+                    "primary-dim": "#8a4cfc",
+                    "tertiary-dim": "#699cff",
+                    "on-secondary": "#004b58",
+                    "on-primary": "#3c0089",
+                    "secondary-fixed": "#65e1ff",
+                    "on-primary-fixed": "#000000",
+                    "secondary": "#53ddfc",
+                    "inverse-on-surface": "#51555c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-body selection:bg-primary/30">
+<!-- Top Navigation Anchor -->
+<nav class="flex justify-between items-center px-12 py-8 w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-[60] bg-transparent">
+<div class="text-xl font-bold tracking-tighter text-violet-400 dark:text-violet-300 font-headline">DEV_ARCHIVE_V1</div>
+<div class="hidden md:flex items-center space-x-10 font-headline tracking-tight">
+<a class="text-slate-400 font-medium hover:text-cyan-400 transition-colors duration-300" href="index.html">Portfolio</a>
+<a class="text-violet-400 font-bold border-b border-violet-400/50 pb-1 hover:text-cyan-400 transition-colors duration-300" href="insight.html">Insights</a>
+<a class="text-slate-400 font-medium hover:text-cyan-400 transition-colors duration-300" href="terminal.html">Terminal</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-violet-400 cursor-pointer hover:scale-95 duration-200">terminal</span>
+<span class="material-symbols-outlined text-violet-400 cursor-pointer hover:scale-95 duration-200">settings</span>
+</div>
+</nav>
+<!-- Side Navigation Shell -->
+<aside class="fixed left-0 top-1/2 -translate-y-1/2 h-fit py-8 flex flex-col gap-6 z-50 bg-[#0f141a]/60 backdrop-blur-xl rounded-r-xl border-r border-white/5 shadow-[0_0_40px_rgba(124,58,237,0.04)] font-headline text-xs tracking-widest uppercase">
+<div class="px-4 pb-4 mb-2 border-b border-white/5">
+<div class="text-cyan-400 font-bold">PRESENTATION</div>
+<div class="text-slate-500 text-[10px]">FE_ENGINEER_DECK</div>
+</div>
+<a class="flex flex-col items-center gap-2 py-4 px-6 text-slate-500 hover:text-slate-300 hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">radio_button_checked</span>
+<span>01_Hero</span>
+</a>
+<a class="flex flex-col items-center gap-2 py-4 px-6 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 text-cyan-400 border-l-2 border-cyan-400 transition-all" href="#">
+<span class="material-symbols-outlined">grain</span>
+<span>02_Process</span>
+</a>
+<a class="flex flex-col items-center gap-2 py-4 px-6 text-slate-500 hover:text-slate-300 hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">memory</span>
+<span>03_Stack</span>
+</a>
+</aside>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-32 pb-24 px-12 md:pl-48 max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Background Ambient Light -->
+<div class="fixed top-1/4 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
+<div class="fixed bottom-0 left-1/4 w-[400px] h-[400px] bg-secondary/5 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
+<!-- Left Column: Identity & Bio (Asymmetric Layout) -->
+<section class="lg:col-span-5 flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<span class="font-label text-secondary tracking-[0.3em] uppercase text-[10px]">SLIDE_02 // SYSTEM_EXPERTISE</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface tracking-tighter leading-none">
+                    Engineering <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Refined</span> Solutions.
+                </h1>
+</div>
+<!-- Profile & About Glass Card -->
+<div class="glass-panel refractive-edge p-8 rounded-xl flex flex-col gap-6 relative overflow-hidden group">
+<!-- Abstract Accent Overlay -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors duration-500"></div>
+<div class="flex items-center gap-6">
+<div class="relative">
+<div class="w-24 h-24 rounded-xl overflow-hidden border border-primary/20 p-1">
+<img alt="Raihan Portrait" class="w-full h-full object-cover rounded-lg" data-alt="professional portrait of a young male software engineer in a minimal tech setting, soft rim lighting, futuristic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHNxoz4ZkFJK3CIzvPhu3EL_nmvevIc_0VxyqFaEAAxzxe8Fsa6ygt97xL0AybNt7ZhEDnDnv2ue4hyfepePr1Lj7UcBQ_vl_AGioakyjeeOsYc7mJJwAxeTchNx2cmNQMK4_snPW7ci686riXfUkyD_KkzFWDSP7K4M7xWOoXqa_AFFg1orEPrgChVlI_5kOGLP0cYhM6PWxHyGH08rnb3Y74H2tqFVgIevnCmCvLAt8fFWOG1etpvL6mere7YuzrJA_jGMmYdy0"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-background p-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline text-xl font-bold text-on-surface">Raihan S.</h2>
+<span class="font-label text-on-surface-variant text-xs">Full-Stack Architect &amp; UI Specialist</span>
+</div>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    Merging technical precision with creative intuition to build high-performance digital ecosystems. My approach focuses on <span class="text-on-surface font-medium">scalability</span> and <span class="text-on-surface font-medium">pixel-perfect execution</span>.
+                </p>
+<div class="flex gap-4 items-center pt-4 border-t border-outline-variant/10">
+<div class="flex flex-col">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Current Status</span>
+<span class="font-headline text-xs text-secondary font-bold">READY_FOR_DEPLOYMENT</span>
+</div>
+<div class="ml-auto flex gap-2">
+<div class="w-8 h-8 rounded-lg surface-container-high flex items-center justify-center border border-outline-variant/20 hover:border-secondary/50 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">terminal</span>
+</div>
+<div class="w-8 h-8 rounded-lg surface-container-high flex items-center justify-center border border-outline-variant/20 hover:border-secondary/50 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">code</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Skills Dashboard (High-Density Tech Data) -->
+<section class="lg:col-span-7 flex flex-col gap-6">
+<!-- Expertise Header -->
+<div class="flex items-center gap-4 justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
+<h3 class="font-headline text-lg font-bold tracking-tight">Core Competencies</h3>
+</div>
+<div class="font-label text-[10px] text-on-surface-variant tracking-widest px-3 py-1 rounded-full surface-container-high border border-outline-variant/15">
+                    RELIABILITY_SCORE: 0.98
+                </div>
+</div>
+<!-- Bento Grid of Skills -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Skill Card: React -->
+<div class="glass-panel refractive-edge p-6 rounded-xl flex flex-col gap-4 group">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">deployed_code</span>
+<span class="font-headline font-bold text-sm">React Framework</span>
+</div>
+<span class="font-label text-[10px] text-primary">94%</span>
+</div>
+<div class="h-1 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-[94%]"></div>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface-variant font-label uppercase">Next.js</span>
+<span class="px-2 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface-variant font-label uppercase">Redux</span>
+<span class="px-2 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface-variant font-label uppercase">Tailwind</span>
+</div>
+</div>
+<!-- Skill Card: Python -->
+<div class="glass-panel refractive-edge p-6 rounded-xl flex flex-col gap-4 group">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">database</span>
+<span class="font-headline font-bold text-sm">Python Backend</span>
+</div>
+<span class="font-label text-[10px] text-secondary">88%</span>
+</div>
+<div class="h-1 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full w-[88%] opacity-80"></div>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface-variant font-label uppercase">Django</span>
+<span class="px-2 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface-variant font-label uppercase">FastAPI</span>
+<span class="px-2 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface-variant font-label uppercase">SQL</span>
+</div>
+</div>
+<!-- Technical Languages Module (Wider/Tall) -->
+<div class="md:col-span-2 glass-panel refractive-edge p-8 rounded-xl flex flex-col gap-8">
+<div class="flex justify-between items-end">
+<div class="flex flex-col gap-1">
+<h4 class="font-headline text-lg font-bold">Standard Stacks</h4>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Base Technical Layer Proficiency</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/30 text-4xl">analytics</span>
+</div>
+<div class="space-y-6">
+<!-- JS Progress -->
+<div class="space-y-2">
+<div class="flex justify-between font-label text-[10px] uppercase tracking-tighter">
+<span>JavaScript (ES2024+)</span>
+<span class="text-secondary">PRO_MASTER</span>
+</div>
+<div class="h-[2px] w-full bg-surface-container-highest relative">
+<div class="absolute h-[6px] w-[90%] bg-primary top-1/2 -translate-y-1/2 shadow-[0_0_12px_rgba(189,157,255,0.4)]"></div>
+<div class="absolute right-[10%] -top-4 font-headline text-[10px] text-primary">0.90</div>
+</div>
+</div>
+<!-- CSS Progress -->
+<div class="space-y-2">
+<div class="flex justify-between font-label text-[10px] uppercase tracking-tighter">
+<span>CSS3 / SCSS / Tailwind</span>
+<span class="text-secondary">ELITE_STYLIST</span>
+</div>
+<div class="h-[2px] w-full bg-surface-container-highest relative">
+<div class="absolute h-[6px] w-[95%] bg-secondary top-1/2 -translate-y-1/2 shadow-[0_0_12px_rgba(83,221,252,0.4)]"></div>
+<div class="absolute right-[5%] -top-4 font-headline text-[10px] text-secondary">0.95</div>
+</div>
+</div>
+<!-- HTML Progress -->
+<div class="space-y-2">
+<div class="flex justify-between font-label text-[10px] uppercase tracking-tighter">
+<span>Semantic HTML &amp; A11y</span>
+<span class="text-on-surface-variant">CORE_FOUNDATION</span>
+</div>
+<div class="h-[2px] w-full bg-surface-container-highest relative">
+<div class="absolute h-[6px] w-[98%] bg-on-surface-variant/50 top-1/2 -translate-y-1/2"></div>
+<div class="absolute right-[2%] -top-4 font-headline text-[10px] text-on-surface-variant">0.98</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Terminal Component Overlay (Sneak Peek) -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border-l-2 border-primary overflow-hidden relative group">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2 h-2 rounded-full bg-error"></div>
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<div class="w-2 h-2 rounded-full bg-primary-fixed-dim"></div>
+<span class="ml-4 font-label text-[9px] text-on-surface-variant">system_log.sh</span>
+</div>
+<code class="text-[10px] font-mono text-tertiary block">
+<span class="text-primary">&gt;</span> INITIALIZING SKILLS_ENGINE... <br/>
+<span class="text-secondary">DONE</span> [OPTIMIZING ASSETS] <br/>
+<span class="text-primary">&gt;</span> LOADED: 12 FRAMEWORKS, 4 LANGUAGES <br/>
+<span class="text-primary">&gt;</span> READY FOR NEXT COMMAND_
+                </code>
+</div>
+</section>
+</main>
+<!-- Global Footer -->
+<footer class="fixed bottom-0 w-full flex justify-between px-12 py-6 pointer-events-none z-50">
+<div class="flex flex-col">
+<span class="font-label text-[10px] tracking-widest text-slate-500 uppercase">©2024 SYSTEM_CORE</span>
+</div>
+<div class="flex gap-8 pointer-events-auto">
+<a class="font-label text-[10px] tracking-widest text-slate-600 hover:text-cyan-400 transition-colors uppercase" href="#">GitHub</a>
+<a class="font-label text-[10px] tracking-widest text-slate-600 hover:text-cyan-400 transition-colors uppercase" href="#">Source_Code</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DEV_ARCHIVE_V1 - Raihan Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/sc/css/style.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#a70138",
+                        "tertiary-fixed-dim": "#73a2ff",
+                        "outline": "#72757d",
+                        "on-secondary-container": "#ecfaff",
+                        "error": "#ff6e84",
+                        "on-error-container": "#ffb2b9",
+                        "on-primary-container": "#2e006c",
+                        "background": "#0a0e14",
+                        "on-secondary-fixed-variant": "#005969",
+                        "tertiary-fixed": "#8ab0ff",
+                        "on-error": "#490013",
+                        "inverse-surface": "#f8f9ff",
+                        "surface-tint": "#bd9dff",
+                        "tertiary-container": "#4388fd",
+                        "surface-variant": "#20262f",
+                        "on-tertiary": "#001e4a",
+                        "on-secondary-fixed": "#003a45",
+                        "inverse-primary": "#742fe5",
+                        "on-tertiary-fixed-variant": "#00377b",
+                        "surface-container-low": "#0f141a",
+                        "surface-container": "#151a21",
+                        "outline-variant": "#44484f",
+                        "secondary-dim": "#40ceed",
+                        "surface-container-high": "#1b2028",
+                        "surface-container-lowest": "#000000",
+                        "surface-container-highest": "#20262f",
+                        "surface": "#0a0e14",
+                        "on-primary-fixed-variant": "#390083",
+                        "on-surface": "#f1f3fc",
+                        "primary-fixed-dim": "#a67aff",
+                        "on-background": "#f1f3fc",
+                        "secondary-container": "#00687a",
+                        "surface-dim": "#0a0e14",
+                        "secondary-fixed-dim": "#48d4f3",
+                        "on-tertiary-fixed": "#00163b",
+                        "error-dim": "#d73357",
+                        "on-surface-variant": "#a8abb3",
+                        "primary": "#bd9dff",
+                        "on-tertiary-container": "#000311",
+                        "surface-bright": "#262c36",
+                        "primary-fixed": "#b28cff",
+                        "primary-container": "#b28cff",
+                        "tertiary": "#699cff",
+                        "primary-dim": "#8a4cfc",
+                        "tertiary-dim": "#699cff",
+                        "on-secondary": "#004b58",
+                        "on-primary": "#3c0089",
+                        "secondary-fixed": "#65e1ff",
+                        "on-primary-fixed": "#000000",
+                        "secondary": "#53ddfc",
+                        "inverse-on-surface": "#51555c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 min-h-screen overflow-x-hidden">
+<!-- Background Ambient Elements -->
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[120px]"></div>
+<div class="absolute inset-0 radial-glow"></div>
+</div>
+<!-- TopNavBar (Shared Component) -->
+<nav class="flex justify-between items-center px-12 py-8 w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-[60]">
+<div class="text-xl font-bold tracking-tighter text-violet-400 dark:text-violet-300 font-headline">
+            DEV_ARCHIVE_V1
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-violet-400 font-bold border-b border-violet-400/50 pb-1 font-headline tracking-tight hover:text-cyan-400 transition-colors duration-300" href="index.html">Portfolio</a>
+<a class="text-slate-400 font-medium font-headline tracking-tight hover:text-cyan-400 transition-colors duration-300" href="insight.html">Insights</a>
+<a class="text-slate-400 font-medium font-headline tracking-tight hover:text-cyan-400 transition-colors duration-300" href="terminal.html">Terminal</a>
+</div>
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-violet-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer">terminal</span>
+<span class="material-symbols-outlined text-violet-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer">settings</span>
+</div>
+</nav>
+<!-- SideNavBar (Shared Component) -->
+<aside class="fixed left-0 top-1/2 -translate-y-1/2 h-fit py-8 flex flex-col gap-6 z-50 bg-[#0f141a]/60 backdrop-blur-xl rounded-r-xl border-r border-white/5 shadow-[0_0_40px_rgba(124,58,237,0.04)]">
+<div class="px-4 mb-4">
+<div class="text-[10px] font-headline tracking-[0.2em] text-cyan-400 uppercase opacity-60">PRESENTATION</div>
+<div class="text-[8px] font-headline tracking-[0.1em] text-slate-500 uppercase">FE_ENGINEER_DECK</div>
+</div>
+<nav class="flex flex-col">
+<div class="group flex items-center gap-4 px-6 py-3 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 text-cyan-400 border-l-2 border-cyan-400 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">radio_button_checked</span>
+<span class="font-headline text-xs tracking-widest uppercase">01_Hero</span>
+</div>
+<div class="group flex items-center gap-4 px-6 py-3 text-slate-500 hover:text-slate-300 hover:bg-white/5 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">grain</span>
+<span class="font-headline text-xs tracking-widest uppercase">02_Process</span>
+</div>
+<div class="group flex items-center gap-4 px-6 py-3 text-slate-500 hover:text-slate-300 hover:bg-white/5 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">memory</span>
+<span class="font-headline text-xs tracking-widest uppercase">03_Stack</span>
+</div>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="relative z-10 min-h-screen flex flex-col justify-center px-12 md:pl-48 max-w-screen-2xl mx-auto pt-24 pb-32">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Meta Label -->
+<div class="flex items-center gap-3">
+<div class="w-12 h-[1px] bg-secondary/40"></div>
+<span class="text-secondary font-label text-xs tracking-[0.3em] uppercase">Identity // Slide 01</span>
+</div>
+<!-- Main Display Headline -->
+<h1 class="font-headline font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9] text-on-background">
+                    I Build <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary typing-cursor">
+                        Beautiful Web Experiences
+                    </span>
+</h1>
+<!-- Body Content (Editorial Asymmetry) -->
+<div class="mt-8 max-w-xl">
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                        Software Engineer specializing in crafting immersive, high-performance digital architectures that bridge the gap between human intuition and technical precision.
+                    </p>
+<div class="flex gap-6 mt-10">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-md text-on-primary-fixed font-headline font-bold text-sm tracking-widest uppercase hover:scale-95 transition-transform duration-200">
+                            Launch Project
+                        </button>
+<button class="px-8 py-4 glass-panel rounded-md font-headline font-bold text-sm tracking-widest uppercase text-on-background hover:bg-white/10 transition-all">
+                            View Stack
+                        </button>
+</div>
+</div>
+</div>
+<!-- Floating Hero Element / Glassmorphism Deck Component -->
+<div class="lg:col-span-4 hidden lg:block relative">
+<div class="glass-panel p-8 rounded-xl relative z-20 border border-white/10 shadow-2xl">
+<div class="flex justify-between items-start mb-12">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-error/40"></div>
+<div class="w-3 h-3 rounded-full bg-secondary/40"></div>
+<div class="w-3 h-3 rounded-full bg-primary/40"></div>
+</div>
+<span class="font-label text-[10px] text-slate-500 uppercase tracking-widest">Live_Session.exe</span>
+</div>
+<div class="space-y-4 font-label text-xs">
+<div class="flex items-center gap-4 text-primary">
+<span class="opacity-50">01</span>
+<span>const profile = {</span>
+</div>
+<div class="flex items-center gap-4 pl-4 text-on-surface">
+<span class="opacity-50">02</span>
+<span>name: "RAIHAN_ENGINEER",</span>
+</div>
+<div class="flex items-center gap-4 pl-4 text-on-surface">
+<span class="opacity-50">03</span>
+<span>role: "FULL_STACK_ARCHITECT",</span>
+</div>
+<div class="flex items-center gap-4 pl-4 text-secondary">
+<span class="opacity-50">04</span>
+<span>focus: ["UI_UX", "SCALABILITY"],</span>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="opacity-50">05</span>
+<span>};</span>
+</div>
+</div>
+</div>
+<!-- Decorative Particles / Blurred Orb -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/20 rounded-full blur-[80px] z-10"></div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-secondary/20 rounded-full blur-[60px] z-10"></div>
+</div>
+</section>
+<!-- Social Icons (Bottom Corner) -->
+<div class="absolute bottom-12 right-12 flex gap-8 items-center z-50">
+<a class="group flex items-center gap-2 text-slate-500 hover:text-secondary transition-colors" href="#">
+<span class="font-label text-[10px] uppercase tracking-widest hidden md:block">GitHub</span>
+<span class="material-symbols-outlined text-lg">code</span>
+</a>
+<a class="group flex items-center gap-2 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="font-label text-[10px] uppercase tracking-widest hidden md:block">LinkedIn</span>
+<span class="material-symbols-outlined text-lg">groups</span>
+</a>
+<a class="group flex items-center gap-2 text-slate-500 hover:text-tertiary transition-colors" href="#">
+<span class="font-label text-[10px] uppercase tracking-widest hidden md:block">Instagram</span>
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="fixed bottom-0 w-full flex justify-between px-12 py-6 pointer-events-none z-[60]">
+<div class="font-label text-[10px] tracking-widest text-slate-500 pointer-events-auto">
+            ©2024 SYSTEM_CORE
+        </div>
+<div class="flex gap-8 pointer-events-auto">
+<a class="font-label text-[10px] tracking-widest text-slate-600 hover:text-cyan-400 transition-colors" href="#">GitHub</a>
+<a class="font-label text-[10px] tracking-widest text-slate-600 hover:text-cyan-400 transition-colors" href="#">Source_Code</a>
+</div>
+</footer>
+<!-- Decorative Particle Overlay (Simulated via SVG Pattern) -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-0">
+<svg height="100%" width="100%">
+<pattern height="40" id="dots" patternunits="userSpaceOnUse" width="40">
+<circle cx="2" cy="2" fill="#f1f3fc" r="1"></circle>
+</pattern>
+<rect fill="url(#dots)" height="100%" width="100%"></rect>
+</svg>
+</div>
+</body></html>
